@@ -1,5 +1,5 @@
 @extends('user.user-layout')
-@section('user-profile')
+@section('section')
     <div class="container">
         <div class="row">
 

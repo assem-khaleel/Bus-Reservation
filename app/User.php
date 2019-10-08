@@ -53,6 +53,7 @@ class User extends Authenticatable
         return $this->morphOne(File::class,'fileable')
             ->where('description','=',User::$PROFILE_IMAGE);
     }
+
     function passport()
     {
         return $this->morphOne(File::class,'fileable')

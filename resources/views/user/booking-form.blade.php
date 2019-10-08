@@ -1,5 +1,5 @@
 @extends('user.user-layout')
-@section('booking-form')
+@section('section')
 
     <div class="container">
         <div class="row">
@@ -66,7 +66,7 @@
                     <div class="panel-footer">
                         <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
                         <span class="pull-right">
-            <a href="{{route('show-bus-list')}}" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+            <a href="{{route('show-bus-list')}}"  data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
           </span>
                     </div>
                 </div>

@@ -15,14 +15,11 @@ Route::get('/', function () {
     return view('welcome-content');
 });
 
-// User Routes
 Route::get('user-welcome', 'UserController@index');
 
 
 // Booking Routes
-//Route::get('booking-form', 'UserController@showBookingForm');
 Route::get('available-seats/{id}', 'UserController@getAvailableSeat');
-
 Route::post('booking-now', 'UserController@bookingNow')->name('booking-now');
 Route::get('show-bus-list', 'UserController@showBusList')->name('show-bus-list');
 Route::get('show-bus-seat-detail/{id}', 'UserController@showBusSeatDetail')->name('booking-form');
@@ -47,6 +44,8 @@ Route::group(['prefix' => 'reports', 'namespace' => 'Reports'], function () {
     Route::get('reports/booking', 'ReportController@booking')->name('report.booking');
     Route::get('reports/bus', 'ReportController@bus')->name('report.bus');
 });
+
+// Profile Routes
 
 Route::group(['prefix' => 'profiles', 'namespace' => 'profiles'], function () {
 

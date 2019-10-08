@@ -1,6 +1,6 @@
 @extends('user.user-layout')
 
-@section('user-profile')
+@section('section')
     <!-- ============================================================== -->
     <!-- Bread crumb and right sidebar toggle -->
     <!-- ============================================================== -->

@@ -17,11 +17,6 @@
     <script src="{{asset('js/sweetalert.min.js')}}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-     {{--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>--}}
-    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">--}}
-    {{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>--}}
-    {{--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>--}}
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
     <script src="http://malsup.github.com/jquery.form.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -31,13 +26,7 @@
 </head>
 <body>
 @include('user.user-header')
-@yield('user-welcome-content')
-@yield('user-profile')
-@yield('edit-profile-form')
-@yield('bus-list')
-@yield('booking-form')
-@yield('user-add-bus')
-@yield('report-booking')
+@yield('section')
 @stack('script')
 @include('user.user-footer')
 </body>

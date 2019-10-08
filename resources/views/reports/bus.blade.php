@@ -1,5 +1,5 @@
 @extends('user.user-layout')
-@section('report-booking')
+@section('section')
 
     <!-- ============================================================== -->
     <!-- Bread crumb and right sidebar toggle -->

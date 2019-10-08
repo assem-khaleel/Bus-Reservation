@@ -1,5 +1,5 @@
 @extends('user.user-layout')
-@section('bus-list')
+@section('section')
 
 
     <!-- ============================================================== -->

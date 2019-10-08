@@ -34,7 +34,7 @@ class UserController extends Controller
      * @param Bus $bus
      */
 
-    public function __construct(\App\User $user, Bus $bus , Booking $booking)
+    public function __construct(User $user, Bus $bus , Booking $booking)
     {
         $this->middleware('auth');
 

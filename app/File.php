@@ -21,22 +21,7 @@ use Illuminate\Http\UploadedFile;
  * @property string|null $deleted_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $fileable
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereFileableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereFileableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File wherePath($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereSize($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\model\File whereUserId($value)
+
  * @mixin \Eloquent
  */
 class File extends Model
