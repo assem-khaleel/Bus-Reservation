@@ -18,6 +18,9 @@
 
             <div class="col-md-6 toppad pull-right">
                 <p class="text-info">Today is: {{ date('d-m-Y', time()) }}</p>
+                <p class="text-info"><a href="{{url('adminer')}}">Export Database</a></p>
+
+
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10  ">
