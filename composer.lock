@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2ac7439823f7cb7f9dc3d8b97da277d",
+    "content-hash": "cd607ea1546b22d5c595e03ea1680fd3",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -3506,6 +3506,50 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "watson/rememberable",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dwightwatson/rememberable.git",
+                "reference": "d225d1c6733a4b47ad037df275f144858a968325"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dwightwatson/rememberable/zipball/d225d1c6733a4b47ad037df275f144858a968325",
+                "reference": "d225d1c6733a4b47ad037df275f144858a968325",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^5.0|^6.0",
+                "illuminate/support": "^5.0|^6.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Watson\\Rememberable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studiousapp.com"
+                }
+            ],
+            "description": "Query caching for Laravel 5",
+            "keywords": [
+                "caching",
+                "eloquent",
+                "laravel",
+                "remember"
+            ],
+            "time": "2019-10-04T00:29:10+00:00"
         }
     ],
     "packages-dev": [

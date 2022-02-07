@@ -23,7 +23,7 @@ class UserController extends Controller
      */
     private $bus;
     /**
-     * @var Bus
+     * @var Booking
      */
     private $booking;
 
@@ -32,6 +32,7 @@ class UserController extends Controller
      *
      * @param \App\User $user
      * @param Bus $bus
+     * @param Booking $booking
      */
 
     public function __construct(User $user, Bus $bus , Booking $booking)
@@ -52,7 +53,6 @@ class UserController extends Controller
     public function showBusList()
     {
         $bus_info = $this->bus->all();
-
         return view('user.user-bus-list')->with('bus_info',$bus_info);
     }
 
@@ -62,7 +62,7 @@ class UserController extends Controller
         $total_seat = $bus_info[0]->total_seat;
         $booked_seat =$this->booking->where('bus_id', $id)->count();
         $final =  $total_seat - $booked_seat;
-        return view('user.user-bus-list')->with('final',$final);
+        return view('user.user-bus-list')->with('final',$final)->with('bus_info',$bus_info);
     }
 
     public function showBusSeatDetail($id)
